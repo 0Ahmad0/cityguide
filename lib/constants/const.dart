@@ -20,3 +20,5 @@ List<Widget> screens = [
 ];
 
 
+List favRestaurant =[];
+

@@ -42,6 +42,9 @@ class _RestaurantsState extends State<Restaurants> {
             onPressed: () {
               setState(() {
                 restaurants[index].isFavorite = !restaurants[index].isFavorite;
+                restaurants[index].isFavorite
+                ?favRestaurant.add(restaurantjson[index])
+                :favRestaurant.removeAt(index);
               });
             },
             image: restaurants[index].image,
